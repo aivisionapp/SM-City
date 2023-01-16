@@ -7,4 +7,6 @@ WORKDIR /usr/src/sm_city
 
 COPY . .
 
-CMD [ "python", "-m", "http.server" ]
+RUN python -m pip install -e requirements.txt
+
+CMD [ "python", "." ]
