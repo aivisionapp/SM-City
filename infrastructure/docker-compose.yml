@@ -7,7 +7,7 @@ services:
       context: ../backend
       config: Dockerfile
     ports:
-      - "8000:8000"
+      - "8080:80"
     restart: always
 
   # Front-end
