@@ -10,7 +10,7 @@ class Data:
     @classmethod
     def connection(cls) -> AsyncIOMotorClient:
         if not cls._connection:
-            cls._connection = AsyncIOMotorClient()
+            cls._connection = AsyncIOMotorClient("mongodb://mongo:27017")
 
         return cls._connection
 
@@ -58,13 +58,19 @@ class Data:
 
     @classmethod
     async def count(
-        cls, *, collection: str, query: list[dict[str, dict[str, Any]]]
+        cls, *, collection: str, query: Optional[list[dict[str, dict[str, Any]]]] = None
     ) -> int:
         conn = Data.connection()
         db = conn.sm_city_data
-        cursor = db[collection].aggregate(
-            [{"$match": {"$and": query}}] + [{"$count": "__docs_count"}]
-        )
+
+        pipeline: list[dict[str, Any]] = []
+
+        if query:
+            pipeline.append({"$match": {"$and": query}})
+
+        pipeline.append({"$count": "__docs_count"})
+
+        cursor = db[collection].aggregate(pipeline)
         try:
             cursor_results = await cursor.next()
         except StopAsyncIteration:
