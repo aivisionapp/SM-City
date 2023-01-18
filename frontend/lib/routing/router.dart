@@ -1,23 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:sm_city/pages/summary/summary.dart';
+
+import 'package:sm_city/features/event/event.dart';
 import 'package:sm_city/pages/vehicles/vehicles.dart';
 import 'package:sm_city/routing/routes.dart';
 
-import '../pages/authentication/authentication.dart';
+const Map<String, Widget> routesWidgets = {
+  summaryDisplayPageRoute: SummaryPage(),
+  vehiclesPageRoute: Vehicles(),
+};
 
 Route<dynamic> generateRoute(RouteSettings settings) {
-
-  switch(settings.name) {
-
-    case summaryDisplayPageRoute:
-      return _getPageRoute(Summary());
-    case vehiclesPageRoute:
-      return _getPageRoute(Vehicles());
-    default:
-      return _getPageRoute(Summary());
-
-  }
-
+  return _getPageRoute(routesWidgets[settings.name] ?? const SummaryPage());
 }
 
 
