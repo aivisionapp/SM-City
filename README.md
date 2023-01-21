@@ -36,5 +36,5 @@ This repository includes following projects and elements:
 3. `frontend`: Front-end to view real-time, and past logs.
 4. `infrastructure`: Config files to serve the solution using Docker/Podman.
 5. `assets`: Contains training materials and its annotations files.
-6. `scripts`: Collection of automation and training scripts.
+6. `result_generator`: Collection of automation and training scripts.
 
