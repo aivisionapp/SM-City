@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<annotation>
+   <folder>images</folder>
+   <filename>5c3104869e2bdb99778218ee9639cf59</filename>
+   <path>/home/abdullah/personal/github_projects/efficientnet_lite_preprocess/dataset/images/5c3104869e2bdb99778218ee9639cf59.jpg</path>
+   <source>
+      <database>Unknown</database>
+   </source>
+   <size>
+      <width>1920</width>
+      <height>1080</height>
+      <depth>3</depth>
+   </size>
+   <segmented>0</segmented>
+   <object>
+      <name>CLUTTER_SIDEWALK</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>-5</xmin>
+         <ymin>331</ymin>
+         <xmax>1893</xmax>
+         <ymax>1046</ymax>
+      </bndbox>
+   </object>
+</annotation>

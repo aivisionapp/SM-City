@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<annotation>
+   <folder>images</folder>
+   <filename>984553119690b144b79e28e552f97250</filename>
+   <path>/home/abdullah/personal/github_projects/efficientnet_lite_preprocess/dataset/images/984553119690b144b79e28e552f97250.jpg</path>
+   <source>
+      <database>Unknown</database>
+   </source>
+   <size>
+      <width>1920</width>
+      <height>1080</height>
+      <depth>3</depth>
+   </size>
+   <segmented>0</segmented>
+   <object>
+      <name>BAD_BILLBOARD</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>695</xmin>
+         <ymin>54</ymin>
+         <xmax>1236</xmax>
+         <ymax>317</ymax>
+      </bndbox>
+   </object>
+</annotation>

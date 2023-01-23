@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<annotation>
+   <folder>images</folder>
+   <filename>ed36a7fdc39f4590a75b6578f8a51dae</filename>
+   <path>/home/abdullah/personal/github_projects/efficientnet_lite_preprocess/dataset/images/ed36a7fdc39f4590a75b6578f8a51dae.jpg</path>
+   <source>
+      <database>Unknown</database>
+   </source>
+   <size>
+      <width>1920</width>
+      <height>1080</height>
+      <depth>3</depth>
+   </size>
+   <segmented>0</segmented>
+   <object>
+      <name>CONSTRUCTION_ROAD</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>9</xmin>
+         <ymin>426</ymin>
+         <xmax>1071</xmax>
+         <ymax>693</ymax>
+      </bndbox>
+   </object>
+</annotation>
